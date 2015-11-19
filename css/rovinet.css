@@ -252,6 +252,14 @@ body {
     font-size: 40px;
 }
 
+#roviPoint .title .big {
+    display: block;
+}
+
+#roviPoint .title .small {
+    display: none;
+}
+
 #roviPoint .sub-title{
     margin-top: 40px;
     color: black;
@@ -433,7 +441,6 @@ body {
         width: 100%;
     }
 
-
     #roviContent .img img {
         height: 70%;
     }
@@ -457,6 +464,14 @@ body {
 
     #roviPoint .title {
         font-size: 29px;
+    }
+
+    #roviPoint .title .big {
+         display: none;
+     }
+
+    #roviPoint .title .small {
+        display: block;
     }
 
     #roviPoint .sub-title{
