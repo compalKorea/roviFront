@@ -43,7 +43,7 @@ body {
 }
 
 #crowd .text {
-    font-size: 3em;
+    font-size: 47px;
     font-weight: 600;
     text-align: center;
     border: 12px solid white;
@@ -165,7 +165,7 @@ body {
     position: relative;
     background-color: #1e1e1e;
     color: white;
-    min-height: 620px;
+    min-height: 615px;
 }
 
 #roviContent .text {
@@ -315,6 +315,10 @@ body {
 }
 
 @media (max-width: 992px) {
+    #crowdContent .text .text-box .title {
+        font-size: 35px;
+    }
+
     #crowdContent .text {
         position: relative;
         width: 100%;
@@ -389,25 +393,63 @@ body {
     #crowd .text {
         border: 0;
         width: 100%;
-        font-size: 40px;
+        font-size: 35px;
         padding: 0;
     }
 
-    #crowd .small {
+    #crowd .text .small {
         font-size: 20px;
+    }
+
+    #crowdContent .img img {
+        height: 70%;
+    }
+
+    #crowdContent .text .text-box {
+        width: 100%;
+    }
+
+    #crowdContent .text .text-box .title {
+        font-size: 30px;
+    }
+
+    #crowdContent .text .text-box .content {
+        font-size: 14px;
+        padding: 0 4%;
     }
 
     #rovi .text {
         border: 0;
         width: 100%;
-        font-size: 40px;
+        font-size: 30px;
         padding: 0;
     }
 
-    #rovi .small {
-        font-size: 20px;
+    #rovi .text .small {
+        font-size: 18px;
     }
 
+    #roviContent .text .text-box {
+        width: 100%;
+    }
+
+
+    #roviContent .img img {
+        height: 70%;
+    }
+
+    #roviContent .text .text-box {
+        width: 100%;
+    }
+
+    #roviContent .text .text-box .title {
+        font-size: 30px;
+    }
+
+    #roviContent .text .text-box .content {
+        font-size: 14px;
+        padding: 0 4%;
+    }
 
     #roviPoint .small-title {
         font-size: 18px;
