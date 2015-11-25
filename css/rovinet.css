@@ -5,6 +5,78 @@ body {
     overflow-x: hidden;
 }
 
+#back-office-box {
+    position: fixed;
+    z-index: 999;
+    top: 2%;
+    right: 2%;
+    width: 84px;
+    height: 105px;
+    cursor: pointer;
+}
+
+#back-office-box .text {
+    color: #e4bd83;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#back-office-box .treasure {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 60px;
+    right: 0;
+    margin: 0 auto;
+}
+
+#back-office-box .crown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 30px;
+    z-index: 99;
+    opacity: 0;
+}
+
+#back-office-box:hover .crown {
+    -webkit-animation-name: crown-move;
+    animation-name: crown-move;
+    -webkit-animation-duration: 0.5s;
+    nimation-duration: 0.5s;
+    opacity: 1;
+    top: -2px;
+}
+
+@-webkit-keyframes crown-move {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        top: -2px;
+    }
+}
+
+@keyframes crown-move {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
 #main {
     position: relative;
     -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
@@ -142,7 +214,7 @@ body {
 }
 
 #rovi .text {
-    font-size: 3em;
+    font-size: 47px;
     font-weight: 600;
     text-align: center;
     border: 12px solid white;
